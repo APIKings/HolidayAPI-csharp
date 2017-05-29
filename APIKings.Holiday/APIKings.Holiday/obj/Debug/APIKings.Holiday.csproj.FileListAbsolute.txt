@@ -1,1 +1,5 @@
 E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.csprojResolveAssemblyReference.cache
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\Debug\APIKings.Holiday.dll
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\Debug\APIKings.Holiday.pdb
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.dll
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.pdb

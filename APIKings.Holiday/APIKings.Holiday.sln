@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIKings.Holiday", "APIKings.Holiday\APIKings.Holiday.csproj", "{76486ACA-F559-4FD2-914F-DF4E285C5EEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{73B95CCA-BF02-4272-A307-3D1132FA5468}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{76486ACA-F559-4FD2-914F-DF4E285C5EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76486ACA-F559-4FD2-914F-DF4E285C5EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76486ACA-F559-4FD2-914F-DF4E285C5EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B95CCA-BF02-4272-A307-3D1132FA5468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B95CCA-BF02-4272-A307-3D1132FA5468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B95CCA-BF02-4272-A307-3D1132FA5468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B95CCA-BF02-4272-A307-3D1132FA5468}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

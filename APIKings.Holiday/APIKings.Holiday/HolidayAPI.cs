@@ -1,53 +1,66 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace APIKings.Holiday
 {
     public class HolidayAPI
     {
-        private readonly string APIKey;
-        private readonly string BaseURL;
-        private readonly string BaseURLWithKey;
+        private readonly Guid APIKey;
+        private readonly Uri BaseURL;
+        private readonly Uri BaseURLWithKey;
 
         public HolidayAPI(string apiKey)
         {
-            APIKey = apiKey;
-            BaseURL = "http://holiday.apikings.com/";
-            BaseURLWithKey = BaseURL + "/" + APIKey;
+            try
+            {
+                APIKey = Guid.Parse(apiKey);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            BaseURL = new Uri("http://holiday.apikings.com");
+            BaseURLWithKey = new Uri(BaseURL + "/" + APIKey);
         }
 
-        public DateTime Next(HolidayAPICountries country)
+        public string Next(string country)
         {
+            country = country.ToUpperInvariant();
+            using (HttpClient client = new HttpClient())
+            {
+                client.BaseAddress = BaseURLWithKey;
+                var request = client.GetStringAsync(String.Format("/get?country={0}", country));
+
+                return new DateTime(request.Result);
+            }
 
 
+            return;
+        }
 
+        public DateTime Previous(string country)
+        {
             return new DateTime();
         }
 
-        public DateTime Previous(HolidayAPICountries country)
+        public List<DateTime> Past(string country)
         {
-            return new DateTime();
+            return new List<DateTime>();
         }
 
-        public DateTime Past(HolidayAPICountries country)
+        public List<DateTime> Future(string country)
         {
-            return new DateTime();
+            return new List<DateTime>();
         }
 
-        public DateTime Future(HolidayAPICountries country)
+        public bool IsHoliday(string country)
         {
-            return new DateTime();
+            return true;
         }
 
-        public DateTime IsHoliday(HolidayAPICountries country)
-        {
-            return new DateTime();
-        }
-
-        public DateTime Get(HolidayAPICountries country)
+        public DateTime Get(string country)
         {
             return new DateTime();
         }

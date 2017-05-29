@@ -1,0 +1,8 @@
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\bin\Debug\Test.exe.config
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\bin\Debug\Test.exe
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\bin\Debug\Test.pdb
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\bin\Debug\APIKings.Holiday.dll
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\bin\Debug\APIKings.Holiday.pdb
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\obj\Debug\Test.exe
+E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\Test\obj\Debug\Test.pdb
