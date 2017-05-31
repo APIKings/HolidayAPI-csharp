@@ -3,3 +3,10 @@ E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\
 E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\Debug\APIKings.Holiday.pdb
 E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.dll
 E:\Programming\APIKings\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.pdb
+C:\Users\remig\Source\Repos\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\Debug\APIKings.Holiday.dll
+C:\Users\remig\Source\Repos\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\Debug\APIKings.Holiday.pdb
+C:\Users\remig\Source\Repos\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.csprojResolveAssemblyReference.cache
+C:\Users\remig\Source\Repos\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.dll
+C:\Users\remig\Source\Repos\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\obj\Debug\APIKings.Holiday.pdb
+C:\Users\remig\Source\Repos\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\Debug\Newtonsoft.Json.dll
+C:\Users\remig\Source\Repos\HolidayAPI-csharp\APIKings.Holiday\APIKings.Holiday\bin\Debug\Newtonsoft.Json.xml
