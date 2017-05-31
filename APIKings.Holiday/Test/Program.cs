@@ -18,21 +18,23 @@ namespace Test
 
             var next = api.Next("uk");
             Console.WriteLine("Next: " + next.Success);
+            Console.WriteLine(next.ToString());
 
-            var previous = api.Previous("uk");
-            Console.WriteLine("Previous: " + previous.Success);
 
-            var future = api.Future("uk");
-            Console.WriteLine("Future: " + future.Success);
+            //var previous = api.Previous("uk");
+            //Console.WriteLine("Previous: " + previous.Success);
 
-            var past = api.Past("uk");
-            Console.WriteLine("Past: " + past.Success);
+            //var future = api.Future("uk");
+            //Console.WriteLine("Future: " + future.Success);
 
-            var isholiday = api.IsHoliday("uk", DateTime.Now);
-            Console.WriteLine("IsHoliday: " + isholiday.Success);
+            //var past = api.Past("uk");
+            //Console.WriteLine("Past: " + past.Success);
 
-            var get = api.Get("uk", 2017);
-            Console.WriteLine("Get: " + get.Success);
+            //var isholiday = api.IsHoliday("uk", DateTime.Now);
+            //Console.WriteLine("IsHoliday: " + isholiday.Success);
+
+            //var get = api.Get("uk", 2017);
+            //Console.WriteLine("Get: " + get.Success);
 
 
 
