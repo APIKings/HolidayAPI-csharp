@@ -21,14 +21,17 @@ namespace Test
             Console.WriteLine(next.ToString());
 
 
-            //var previous = api.Previous("uk");
-            //Console.WriteLine("Previous: " + previous.Success);
+            var previous = api.Previous("uk");
+            Console.WriteLine("Previous: " + previous.Success);
+            Console.WriteLine(previous.ToString());
 
-            //var future = api.Future("uk");
-            //Console.WriteLine("Future: " + future.Success);
+            var future = api.Future("uk");
+            Console.WriteLine("Future: " + future.Success);
+            Console.WriteLine(future.ToString());
 
-            //var past = api.Past("uk");
-            //Console.WriteLine("Past: " + past.Success);
+            var past = api.Past("uk");
+            Console.WriteLine("Past: " + past.Success);
+            Console.WriteLine(past.ToString());
 
             //var isholiday = api.IsHoliday("uk", DateTime.Now);
             //Console.WriteLine("IsHoliday: " + isholiday.Success);

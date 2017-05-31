@@ -7,7 +7,7 @@ namespace APIKings.Holiday.Responses
     public class ResponseFuturePast : IAPIResponse
     {
         public bool Success { get; set; }
-        public List<DateTime> Dates { get; set; }
+        public List<Holiday> Holidays { get; set; }
 
         public override string ToString()
         {
