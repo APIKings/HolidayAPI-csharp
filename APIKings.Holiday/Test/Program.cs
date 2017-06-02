@@ -33,9 +33,17 @@ namespace Test
             Console.WriteLine("Past: " + past.Success);
             Console.WriteLine(past.ToString());
 
-            var isholiday = api.IsHoliday("uk", DateTime.Now);
+            var isholiday = api.IsHoliday("uk", new DateTime(2017, 05, 29));
             Console.WriteLine("IsHoliday: " + isholiday.Success);
             Console.WriteLine(isholiday.ToString());
+            if (isholiday.Success)
+            {
+                if (isholiday.IsHoliday)
+                {
+                    Console.WriteLine("Holiday name: " + isholiday.Holiday.Name);
+                    Console.WriteLine("Holiday date: " + isholiday.Holiday.HolidayDate);
+                }
+            }
 
             var get = api.Get("uk", 2017);
             Console.WriteLine("Get: " + get.Success);

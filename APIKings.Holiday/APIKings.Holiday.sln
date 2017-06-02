@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIKings.Holiday", "APIKings.Holiday\APIKings.Holiday.csproj", "{76486ACA-F559-4FD2-914F-DF4E285C5EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{73B95CCA-BF02-4272-A307-3D1132FA5468}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Test\Examples.csproj", "{73B95CCA-BF02-4272-A307-3D1132FA5468}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

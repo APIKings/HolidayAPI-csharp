@@ -1,5 +1,6 @@
 ﻿using APIKings.Holiday.Responses;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Net.Http;
 
@@ -30,7 +31,7 @@ namespace APIKings.Holiday
             }
         }
 
-        public IAPIResponse Next(string country)
+        public ResponseNextPrevious Next(string country)
         {
             country = country.ToUpperInvariant();
             using (HttpClient client = new HttpClient())
@@ -43,7 +44,7 @@ namespace APIKings.Holiday
             }
         }
 
-        public IAPIResponse Previous(string country)
+        public ResponseNextPrevious Previous(string country)
         {
             country = country.ToUpperInvariant();
             using (HttpClient client = new HttpClient())
@@ -56,7 +57,7 @@ namespace APIKings.Holiday
             }
         }
 
-        public IAPIResponse Past(string country)
+        public ResponseFuturePast Past(string country)
         {
             country = country.ToUpperInvariant();
             using (HttpClient client = new HttpClient())
@@ -69,7 +70,7 @@ namespace APIKings.Holiday
             }
         }
 
-        public IAPIResponse Future(string country)
+        public ResponseFuturePast Future(string country)
         {
             country = country.ToUpperInvariant();
             using (HttpClient client = new HttpClient())
@@ -82,26 +83,30 @@ namespace APIKings.Holiday
             }
         }
 
-        public IAPIResponse IsHoliday(string country, DateTime date)
+        public ResponseIsHoliday IsHoliday(string country, DateTime date)
         {
             country = country.ToUpperInvariant();
+            var formatedDate = date.ToString("dd-MM-yyyy");
             using (HttpClient client = new HttpClient())
             {
                 client.BaseAddress = BaseURL;
-                var request = client.GetAsync(String.Format("/future/{0}?country={1}&date={2}", APIKey.ToString(), country, date.ToString("dd-mm-yyyy")));
+                var request = client.GetAsync(String.Format("/isholiday/{0}?country={1}&date={2}", APIKey.ToString(), country, formatedDate));
                 var result = request.Result.Content.ReadAsStringAsync().Result;
-                var json = JsonConvert.DeserializeObject<ResponseIsHoliday>(result);
+
+                var dateTimeConverter = new IsoDateTimeConverter() { DateTimeFormat = "dd/MM/yyyy" };
+                var json = JsonConvert.DeserializeObject<ResponseIsHoliday>(result, dateTimeConverter);
+                
                 return json;
             }
         }
 
-        public IAPIResponse Get(string country, int year)
+        public ResponseGet Get(string country, int year)
         {
             country = country.ToUpperInvariant();
             using (HttpClient client = new HttpClient())
             {
                 client.BaseAddress = BaseURL;
-                var request = client.GetAsync(String.Format("/future/{0}?country={1}&year={2}", APIKey.ToString(), country, year));
+                var request = client.GetAsync(String.Format("/get/{0}?country={1}&year={2}", APIKey.ToString(), country, year));
                 var result = request.Result.Content.ReadAsStringAsync().Result;
                 var json = JsonConvert.DeserializeObject<ResponseGet>(result);
                 return json;
